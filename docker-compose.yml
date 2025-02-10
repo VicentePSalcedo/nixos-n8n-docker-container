@@ -1,0 +1,14 @@
+services:
+  sintra-n8n:
+    image: sintra-n8n  # The name of your Docker image
+    container_name: sintra-n8n # Optional, but good practice
+    ports:
+      - "5678:5678"  # Port mapping
+    volumes:
+      - n8n_data:/root/.n8n  # Named volume mapping
+    restart: always # Optional: Ensures the container restarts if it crashes
+    tty: true # Keeps the container running interactively (like -it)
+    stdin_open: true # Keeps stdin open (like -it)
+
+volumes:
+  n8n_data:  # Define the named volume
