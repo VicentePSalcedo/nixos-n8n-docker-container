@@ -1,5 +1,5 @@
-# Docker command to build the container
- - docker build -t <container name> <location of docker file>
+Simple Nixos based docker image with n8n and it's dependencies managed by a shell.nix within the docker image.
+
 # Docker compose commands to use
  - docker-compose up -d: Starts the container in detached mode (in the background). The -d is important so it doesn't block your terminal.
  - docker-compose down: Stops and removes the container and the network created by docker-compose.
