@@ -15,7 +15,8 @@ pkgs.mkShell {
 
   shellHook = ''
     export N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
-    export N8N_HOST=192.168.86.248 \
-    export N8N_SECURE_COOKIE=false
   '';
+    # add to debug over the local network, don't go to production with these
+    # export N8N_HOST=192.168.86.248 \
+    # export N8N_SECURE_COOKIE=false
 }

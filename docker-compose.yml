@@ -1,6 +1,6 @@
 services:
   sintra-n8n:
-    image: sintra-n8n  # The name of your Docker image
+    image: sintra-n8n # the name of your docker image
     container_name: sintra-n8n # Optional, but good practice
     ports:
       - "5678:5678"  # Port mapping
